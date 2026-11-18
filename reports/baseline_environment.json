@@ -1,0 +1,12 @@
+{
+  "python": "3.14.7",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.9",
+    "Pillow": "11.3.0"
+  },
+  "dataset_sha256": "fb367dfb246fbeaadc3790c6b3548e650df956800c2c7765b7d425b8f1e4cffb"
+}

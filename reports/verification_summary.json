@@ -1,0 +1,41 @@
+{
+  "project": "Student_Bayes",
+  "application": {
+    "rows": 150,
+    "correctness_tests": 7,
+    "status": "passed"
+  },
+  "package": {
+    "build": "passed",
+    "prediction_smoke_test": "passed",
+    "artifact": "temporary; excluded from repository"
+  },
+  "gallery": {
+    "figures": 24,
+    "full_dimensions": [
+      1440,
+      900
+    ],
+    "preview_dimensions": [
+      960,
+      600
+    ],
+    "source": "assets/gallery.json"
+  },
+  "bayesian_resampling": "not verified; saved notebook results retained",
+  "environment": "reports/baseline_environment.json",
+  "browser_details": "reports/site_checks.json",
+  "final_audit": {
+    "date": "2026-11-18",
+    "markdown_local_links_checked": 20,
+    "python_sources": "syntax valid",
+    "project_configuration": "valid",
+    "readme_final_section": "About the Author",
+    "notebook_schema": "valid",
+    "notebook_code_cells": 15,
+    "saved_bayesian_models": 8,
+    "saved_notebook_figures": 15,
+    "saved_output_errors": 0,
+    "fresh_bayesian_execution": "not verified"
+  }
+}

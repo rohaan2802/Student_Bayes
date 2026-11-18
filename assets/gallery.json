@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "title": "Habit and score distributions",
+    "category": "EDA",
+    "caption": "Four numeric distributions from the supplied 150-row dataset.",
+    "full": "assets/figures/01-habit-and-score-distributions-v5.png",
+    "preview": "assets/previews/01-habit-and-score-distributions-v5.png"
+  },
+  {
+    "id": 2,
+    "title": "Habits against quiz score",
+    "category": "EDA",
+    "caption": "Saved notebook scatter plots show associations across the three categories.",
+    "full": "assets/figures/02-habits-against-quiz-score-v5.png",
+    "preview": "assets/previews/02-habits-against-quiz-score-v5.png"
+  },
+  {
+    "id": 3,
+    "title": "Scores across student categories",
+    "category": "EDA",
+    "caption": "Saved group boxplots compare score distributions.",
+    "full": "assets/figures/03-scores-across-student-categories-v5.png",
+    "preview": "assets/previews/03-scores-across-student-categories-v5.png"
+  },
+  {
+    "id": 4,
+    "title": "Pearson correlation matrix",
+    "category": "EDA",
+    "caption": "Saved sample correlations reveal strongly overlapping predictors.",
+    "full": "assets/figures/04-pearson-correlation-matrix-v5.png",
+    "preview": "assets/previews/04-pearson-correlation-matrix-v5.png"
+  },
+  {
+    "id": 5,
+    "title": "Bayesian correlation posterior",
+    "category": "Bayesian",
+    "caption": "Saved bivariate-normal posterior for study hours and quiz score; 94% HDI.",
+    "full": "assets/figures/05-bayesian-correlation-posterior-v5.png",
+    "preview": "assets/previews/05-bayesian-correlation-posterior-v5.png"
+  },
+  {
+    "id": 6,
+    "title": "Simple regression chain diagnostics",
+    "category": "Bayesian",
+    "caption": "Saved density and chain traces for the Gaussian model.",
+    "full": "assets/figures/06-simple-regression-chain-diagnostics-v5.png",
+    "preview": "assets/previews/06-simple-regression-chain-diagnostics-v5.png"
+  },
+  {
+    "id": 7,
+    "title": "Simple regression mean uncertainty",
+    "category": "Bayesian",
+    "caption": "Saved 94% mean HDI; this is not a prediction interval for a new student.",
+    "full": "assets/figures/07-simple-regression-mean-uncertainty-v5.png",
+    "preview": "assets/previews/07-simple-regression-mean-uncertainty-v5.png"
+  },
+  {
+    "id": 8,
+    "title": "Gaussian versus robust regression",
+    "category": "Bayesian",
+    "caption": "Saved Gaussian and Student-t fits give similar study slopes.",
+    "full": "assets/figures/08-gaussian-versus-robust-regression-v5.png",
+    "preview": "assets/previews/08-gaussian-versus-robust-regression-v5.png"
+  },
+  {
+    "id": 9,
+    "title": "Linear versus quadratic regression",
+    "category": "Bayesian",
+    "caption": "Saved mean curves illustrate weak evidence for curvature.",
+    "full": "assets/figures/09-linear-versus-quadratic-regression-v5.png",
+    "preview": "assets/previews/09-linear-versus-quadratic-regression-v5.png"
+  },
+  {
+    "id": 10,
+    "title": "Multiple regression chain diagnostics",
+    "category": "Bayesian",
+    "caption": "Saved traces include the three standardized predictor slopes.",
+    "full": "assets/figures/10-multiple-regression-chain-diagnostics-v5.png",
+    "preview": "assets/previews/10-multiple-regression-chain-diagnostics-v5.png"
+  },
+  {
+    "id": 11,
+    "title": "Adjusted coefficient intervals",
+    "category": "Bayesian",
+    "caption": "Saved multiple-regression 94% HDIs in score points per predictor SD.",
+    "full": "assets/figures/11-adjusted-coefficient-intervals-v5.png",
+    "preview": "assets/previews/11-adjusted-coefficient-intervals-v5.png"
+  },
+  {
+    "id": 12,
+    "title": "Joint coefficient posterior",
+    "category": "Bayesian",
+    "caption": "Saved posterior relationships show slope trade-offs under collinearity.",
+    "full": "assets/figures/12-joint-coefficient-posterior-v5.png",
+    "preview": "assets/previews/12-joint-coefficient-posterior-v5.png"
+  },
+  {
+    "id": 13,
+    "title": "Posterior predictive checks",
+    "category": "Bayesian",
+    "caption": "Saved replicated-score densities compared with observed scores for four models.",
+    "full": "assets/figures/13-posterior-predictive-checks-v5.png",
+    "preview": "assets/previews/13-posterior-predictive-checks-v5.png"
+  },
+  {
+    "id": 14,
+    "title": "Unpooled and hierarchical means",
+    "category": "Bayesian",
+    "caption": "Saved group-mean intervals show limited pooling with 50 rows per category.",
+    "full": "assets/figures/14-unpooled-and-hierarchical-means-v5.png",
+    "preview": "assets/previews/14-unpooled-and-hierarchical-means-v5.png"
+  },
+  {
+    "id": 15,
+    "title": "Bayesian test confusion matrix",
+    "category": "Classification",
+    "caption": "Saved notebook result: 30 of 30 test students classified correctly.",
+    "full": "assets/figures/15-bayesian-test-confusion-matrix-v5.png",
+    "preview": "assets/previews/15-bayesian-test-confusion-matrix-v5.png"
+  },
+  {
+    "id": 16,
+    "title": "Balanced category counts",
+    "category": "EDA",
+    "caption": "Recomputed counts: each category contains 50 synthetic students.",
+    "full": "assets/figures/16-balanced-category-counts-v5.png",
+    "preview": "assets/previews/16-balanced-category-counts-v5.png"
+  },
+  {
+    "id": 17,
+    "title": "Training-only cross-validation",
+    "category": "Verification",
+    "caption": "Fifteen validation-fold accuracies, using only the 120 training rows; the dotted line is the prior-only holdout baseline.",
+    "full": "assets/figures/17-training-only-cross-validation-v5.png",
+    "preview": "assets/previews/17-training-only-cross-validation-v5.png"
+  },
+  {
+    "id": 18,
+    "title": "Study hours by category",
+    "category": "EDA",
+    "caption": "Recomputed category means and sample SDs; error bars show spread, not uncertainty in the mean.",
+    "full": "assets/figures/18-study-hours-by-category-v5.png",
+    "preview": "assets/previews/18-study-hours-by-category-v5.png"
+  },
+  {
+    "id": 19,
+    "title": "Baseline test confusion matrix",
+    "category": "Classification",
+    "caption": "Fresh frequentist logistic baseline on a stratified 120/30 split; separate from the Bayesian model.",
+    "full": "assets/figures/19-baseline-test-confusion-matrix-v5.png",
+    "preview": "assets/previews/19-baseline-test-confusion-matrix-v5.png"
+  },
+  {
+    "id": 20,
+    "title": "Baseline test class probabilities",
+    "category": "Classification",
+    "caption": "Fresh baseline probabilities for 30 held-out rows; each stacked bar sums to one.",
+    "full": "assets/figures/20-baseline-test-class-probabilities-v5.png",
+    "preview": "assets/previews/20-baseline-test-class-probabilities-v5.png"
+  },
+  {
+    "id": 21,
+    "title": "Held-out regression comparison",
+    "category": "Baseline",
+    "caption": "RMSE on the same 30 held-out rows; every model is fitted on the 120 training rows. Lower is better.",
+    "full": "assets/figures/21-held-out-regression-comparison-v5.png",
+    "preview": "assets/previews/21-held-out-regression-comparison-v5.png"
+  },
+  {
+    "id": 22,
+    "title": "OLS residual pattern",
+    "category": "Baseline",
+    "caption": "Fresh full-sample residuals help inspect departures from a linear mean.",
+    "full": "assets/figures/22-ols-residual-pattern-v5.png",
+    "preview": "assets/previews/22-ols-residual-pattern-v5.png"
+  },
+  {
+    "id": 23,
+    "title": "Train-fold permutation importance",
+    "category": "Verification",
+    "caption": "Validation-fold log-loss increase after shuffling each feature; bars show mean and SD across 50 permutations, not causal effects.",
+    "full": "assets/figures/23-train-fold-permutation-importance-v5.png",
+    "preview": "assets/previews/23-train-fold-permutation-importance-v5.png"
+  },
+  {
+    "id": 24,
+    "title": "Training pipeline source",
+    "category": "Source",
+    "caption": "Actual src/analyze.py code: the scaler stays inside the estimator, and the stratified split uses a fixed seed.",
+    "full": "assets/figures/24-training-pipeline-source-v5.png",
+    "preview": "assets/previews/24-training-pipeline-source-v5.png"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "folders": [{"path": "."}],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "python.testing.unittestEnabled": true,
+    "python.testing.unittestArgs": ["-s", "tests", "-p", "test_*.py"],
+    "files.exclude": {"**/__pycache__": true, "**/.ipynb_checkpoints": true}
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {"label": "Run analysis", "type": "process", "command": "python", "args": ["src/analyze.py"], "group": {"kind": "build", "isDefault": true}, "problemMatcher": []},
+      {"label": "Build portfolio", "type": "process", "command": "python", "args": ["src/build_portfolio.py"], "problemMatcher": []},
+      {"label": "Check correctness", "type": "process", "command": "python", "args": ["-m", "unittest", "discover", "-s", "tests"], "group": "test", "problemMatcher": []},
+      {"label": "Preview website", "type": "process", "command": "python", "args": ["-m", "http.server", "8000"], "problemMatcher": []}
+    ]
+  }
+}

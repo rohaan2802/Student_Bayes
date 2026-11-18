@@ -1,0 +1,7 @@
+-r requirements.txt
+pymc>=5.20,<6
+arviz>=0.21,<1
+scipy>=1.15,<2
+seaborn>=0.13,<1
+jupyterlab>=4,<5
+nbclient>=0.10,<1

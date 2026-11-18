@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+*.pyc
+reports/executed_notebook.ipynb
+.review/
+build/
+dist/
+*.egg-info/

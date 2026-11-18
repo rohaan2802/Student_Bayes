@@ -1,0 +1,153 @@
+{
+  "rows": 150,
+  "missing": 0,
+  "duplicates": 0,
+  "seed": 42,
+  "train_rows": 120,
+  "test_rows": 30,
+  "baseline_accuracy": 1.0,
+  "accuracy_wilson_95": [
+    0.8864866068260312,
+    0.9999999999999999
+  ],
+  "baseline_log_loss": 0.06255622600707243,
+  "multiclass_brier": 0.015755672598654194,
+  "dummy_accuracy": 0.3333333333333333,
+  "baseline_confusion": [
+    [
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      10,
+      0
+    ],
+    [
+      0,
+      0,
+      10
+    ]
+  ],
+  "confusion_labels": [
+    "bad",
+    "good",
+    "excellent"
+  ],
+  "baseline_report": {
+    "bad": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "excellent": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "good": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    }
+  },
+  "descriptive_ols_r2": 0.9107340135882349,
+  "ols_coefficients": {
+    "study_hours": 0.5097215890445153,
+    "sleep_hours": -0.10638453164562317,
+    "social_time": -0.5186579366789733
+  },
+  "correlation": {
+    "study_hours": {
+      "study_hours": 1.0,
+      "sleep_hours": -0.6957380306194423,
+      "social_time": -0.9359237942876014,
+      "quiz_score": 0.9388879638693011
+    },
+    "sleep_hours": {
+      "study_hours": -0.6957380306194423,
+      "sleep_hours": 1.0,
+      "social_time": 0.7306782375210508,
+      "quiz_score": -0.7276204390217091
+    },
+    "social_time": {
+      "study_hours": -0.9359237942876014,
+      "sleep_hours": 0.7306782375210508,
+      "social_time": 1.0,
+      "quiz_score": -0.9356647674215219
+    },
+    "quiz_score": {
+      "study_hours": 0.9388879638693011,
+      "sleep_hours": -0.7276204390217091,
+      "social_time": -0.9356647674215219,
+      "quiz_score": 1.0
+    }
+  },
+  "cv_scope": "classification training partition only",
+  "cv_folds": 5,
+  "cv_repeats": 3,
+  "cv_accuracy_mean": 1.0,
+  "cv_accuracy_sd": 0.0,
+  "cv_accuracy_min": 1.0,
+  "cv_accuracy_max": 1.0,
+  "cv_scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "regression_holdout": [
+    {
+      "model": "Mean-only",
+      "rmse": 2.119315804972017,
+      "mae": 1.8047267147752395,
+      "r2": -0.0010833998430215264
+    },
+    {
+      "model": "Study-only OLS",
+      "rmse": 0.7416857660111112,
+      "mae": 0.6081026245897387,
+      "r2": 0.8773920037948056
+    },
+    {
+      "model": "Multiple OLS",
+      "rmse": 0.6546438128450107,
+      "mae": 0.5540307076247074,
+      "r2": 0.9044811596379474
+    },
+    {
+      "model": "Ridge (alpha=1)",
+      "rmse": 0.6547115298580777,
+      "mae": 0.5536212798981649,
+      "r2": 0.9044613974864533
+    }
+  ]
+}
