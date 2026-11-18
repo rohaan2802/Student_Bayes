@@ -167,7 +167,7 @@ def write_pages(root,manifest,metrics):
     (root/'README.md').write_text(readme,encoding='utf-8')
     nav_ids={'overview','data','methods','pipeline','results','explorer','source','setup','outputs','verification'}
     short={'overview':'Overview','data':'Data','methods':'Models','pipeline':'Pipeline','results':'Results','explorer':'Explorer','source':'Source','setup':'Setup','outputs':'Outputs','verification':'Checks'}
-    nav=''.join(f'<a href="#{sid}">{short[sid]}</a>' for sid,_,_ in sections if sid in nav_ids)+'<a href="#gallery">Figures</a>'
+    nav=''.join(f'<a href="#{sid}">{short[sid]}</a>' for sid,_,_ in sections if sid in nav_ids)+'<a href="#gallery">Figures</a><a href="#author">Author</a>'
     article=''
     author_section=''
     for number,(sid,title,blocks) in enumerate(sections,1):

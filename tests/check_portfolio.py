@@ -66,7 +66,16 @@ try:
                 assert tab.evaluate('document.documentElement.scrollWidth<=innerWidth'),(width,theme)
                 assert tab.locator('.gallery').evaluate('(e)=>getComputedStyle(e).gridTemplateColumns.split(" ").length')==(3 if width>1100 else 2 if width>600 else 1)
                 assert tab.locator('html').get_attribute('data-theme')==theme
-                assert tab.locator('nav a').count()==11
+                assert tab.locator('nav a').count()==12
+                author_link=tab.locator('nav a').last
+                assert author_link.inner_text()=='Author'
+                assert author_link.get_attribute('href')=='#author'
+                if width<=1100:
+                    tab.locator('#menu').click()
+                author_link.click()
+                tab.wait_for_function("location.hash === '#author' && Math.abs(document.querySelector('#author').getBoundingClientRect().top) < innerHeight")
+                assert tab.locator('#menu').get_attribute('aria-expanded')=='false'
+                tab.goto(base,wait_until='networkidle')
                 assert tab.locator('main section').last.get_attribute('id')=='author'
                 assert tab.locator('nav a').first.evaluate('(e)=>parseFloat(getComputedStyle(e).fontSize)')>=18
                 assert tab.locator('#top-button').evaluate('(e)=>parseFloat(getComputedStyle(e).width)')>=56
